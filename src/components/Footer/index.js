@@ -7,7 +7,7 @@ import Link from '../Link';
 function Footer() {
   return (
     <div className={s.container}>
-      <p className={s.text}>
+      <div className={s.text}>
         <a
           className={s.updated}
           href="https://github.com/bpeters/bpeters.github.io"
@@ -16,7 +16,7 @@ function Footer() {
           updated
         </a>
         &nbsp;{moment(window.updatedLast, 'x').fromNow()}&nbsp;
-      </p>
+      </div>
       <img src="logo.png" className={s.logo}/>
     </div>
   );

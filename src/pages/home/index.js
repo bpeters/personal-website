@@ -134,14 +134,16 @@ const projects = [
 const renderLinks = (links) => {
   return links.map((link, i) => {
     return (
-      <a
-        className={s.projectLink}
-        href={link.url}
-        target="_blank"
-        key={i}
-      >
-        {link.title}
-      </a>
+      <div>
+        <a
+          className={s.projectLink}
+          href={link.url}
+          target="_blank"
+          key={i}
+        >
+          {link.title}
+        </a>
+      </div>
     );
   })
 };
@@ -193,56 +195,51 @@ class HomePage extends Component {
     return (
       <div className={s.container}>
         <div className={s.body}>
-          <div>
-            <p className={s.title}>
-              Hi, my name is
-              <span className={s.green}>&nbsp;Brennen Peters&nbsp;</span>
-            </p>
-            <p className={s.text}>
-              I like
-              <b>&nbsp;building & designing&nbsp;</b>
-              stuff
-            </p>
-            <p className={s.text}>
-              I love
-              <b>&nbsp;traveling&nbsp;</b>
-            </p>
-            <p className={s.text}>
-              I fucking love
-              <b>&nbsp;coffee&nbsp;</b>
-            </p>
+          <div className={s.title}>
+            Hi, my name is
+            <span className={s.green}>&nbsp;Brennen Peters&nbsp;</span>
           </div>
-          <div className={s.links}>
-            <a className={s.link} href="https://github.com/bpeters" target="_blank">
-              github/bpeters
-            </a>
-            <a className={s.link} href="https://www.linkedin.com/in/brennenpeters/" target="_blank">
-              linkedin/brennenpeters
-            </a>
-            <a className={s.link} href="https://www.instagram.com/brennen_peters/" target="_blank">
-              instagram/brennen_peters
-            </a>
+          <div className={s.text}>
+            I like
+            <b>&nbsp;building & designing&nbsp;</b>
+            stuff
           </div>
+          <div className={s.text}>
+            I love
+            <b>&nbsp;traveling&nbsp;</b>
+          </div>
+          <div className={s.text}>
+            I fucking love
+            <b>&nbsp;coffee&nbsp;</b>
+          </div>
+          <div className={s.spacer} />
+          <a className={s.link} href="https://github.com/bpeters" target="_blank">
+            github/bpeters
+          </a>
+          <a className={s.link} href="https://www.linkedin.com/in/brennenpeters/" target="_blank">
+            linkedin/brennenpeters
+          </a>
+          <a className={s.link} href="https://www.instagram.com/brennen_peters/" target="_blank">
+            instagram/brennen_peters
+          </a>
           <div className={s.logo}>
             <img
               className={s.portrait}
               src="portrait.png"
             />
           </div>
-          <div className={s.links}>
-            <a className={s.ethlink} href="https://etherscan.io/address/brennen.eth" target="_blank">
-              brennen.eth
-            </a>
-            <p className={s.small}>
-              I like ethereum
-            </p>
+          <a className={s.ethlink} href="https://etherscan.io/address/brennen.eth" target="_blank">
+            brennen.eth
+          </a>
+          <div className={s.small}>
+            I like ethereum
           </div>
           <div className={s.projects}>
             Projects
           </div>
-          <p className={s.small}>
+          <div className={s.small}>
             I work on too many things at once…
-          </p>
+          </div>
           {renderProjects()}
         </div>
         <Footer />
