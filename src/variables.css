@@ -1,0 +1,41 @@
+:root {
+  /*
+   * Typography
+   * ======================================================================== */
+
+  --font-family-base: 'Inconsolata', sans-serif;
+
+  /*
+   * Layout
+   * ======================================================================== */
+
+  --max-content-width: 1000px;
+
+  /*
+   * Media queries breakpoints
+   * ======================================================================== */
+
+  --screen-xs-min: 480px;  /* Extra small screen / phone */
+  --screen-sm-min: 768px;  /* Small screen / tablet */
+  --screen-md-min: 992px;  /* Medium screen / desktop */
+  --screen-lg-min: 1200px; /* Large screen / wide desktop */
+
+  --header-height: 64px; /* height of header */
+
+  /*
+   * Colors
+   * ======================================================================== */
+
+  /* BASE */
+  --green: #93C47D;
+  --blue: #6D9EEB;
+  --red: #E06666;
+  --black: #2E2E2E;
+
+  /* GRAY */
+  --gray_very_light: #f3f3f3;
+  --gray_light: #ddd;
+  --gray_medium: #c8c8c8;
+  --gray_base: #989898;
+  --gray_dark: #686868;
+}

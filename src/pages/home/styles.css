@@ -1,0 +1,157 @@
+@import '../../variables.css';
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--black);
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.text {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.green {
+  color: var(--green);
+}
+
+.links {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  margin-bottom: 8px;
+  color: var(--blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue);
+  transition: all 100ms ease-in;
+  font-size: 14px;
+}
+
+.link:hover {
+  border-bottom: 2px solid var(--blue);
+  margin-bottom: 7px;
+}
+
+.logo {
+  margin-top: 40px;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border: 10px solid #fff;
+  opacity: 1;
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+
+.ethlink {
+  font-size: 20px;
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 1px solid var(--green);
+  transition: all 100ms ease-in;
+  margin-bottom: 8px;
+}
+
+.ethlink:hover {
+  border-bottom: 2px solid var(--green);
+  margin-bottom: 7px;
+}
+
+.small {
+  margin: 0;
+  font-size: 12px;
+}
+
+.projects {
+  margin-top: 40px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.projectTitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.projectAward {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--green);
+}
+
+.projectDescription {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.projectAlert {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: var(--red);
+}
+
+.projectLink {
+  font-size: 12px;
+  color: var(--blue);
+  border-bottom: 1px solid var(--blue);
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.projectLink:hover {
+  border-bottom: 2px solid var(--blue);
+  margin-bottom: 7px;
+}
