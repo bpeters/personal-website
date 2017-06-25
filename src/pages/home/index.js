@@ -39,7 +39,7 @@ const projects = [
     links: [
       {
         title: 'website',
-        url: 'https://sevensails.world',
+        url: 'http://sevensails.world',
       },
     ],
   },
