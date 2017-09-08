@@ -6,20 +6,6 @@ import s from './styles.css';
 
 const projects = [
   {
-    title: 'ETHPING',
-    description: 'decentralized outreach and connections',
-    links: [
-      {
-        title: 'website',
-        url: 'https://ethping.com',
-      },
-      {
-        title: 'github',
-        url: 'https://github.com/ethping',
-      },
-    ],
-  },
-  {
     title: 'LMNOP',
     description: 'wireless 3.0 on the blockchain',
     links: [
@@ -227,12 +213,6 @@ class HomePage extends Component {
               className={s.portrait}
               src="portrait.png"
             />
-          </div>
-          <a className={s.ethlink} href="https://etherscan.io/address/brennen.eth" target="_blank">
-            brennen.eth
-          </a>
-          <div className={s.small}>
-            I like ethereum
           </div>
           <div className={s.projects}>
             Projects
